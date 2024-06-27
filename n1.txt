@@ -1,0 +1,17 @@
+Node JS
+-Environment to run JS outside the browser/JS runtime
+-Built on chrome's v8 JS Engine
+-Big Community
+-Full stack
+
+How Node JS differs from Vanilla JS
+1. Node runs on a server- not in a browser(backend not frontend)
+2.The console is the terminal window
+3.global object instead of window object
+global object is smaller but has same property as windows object have
+4.Has common Core modules that we will explore - like os modules, file modules
+5.CommanJS modules instead of ES6 modules
+to import instead of using import "as" from "" (ES6)
+we write require("") (CommanJS)
+node filename.js
+6.Missing some JS API's like fetch

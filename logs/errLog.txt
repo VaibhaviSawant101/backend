@@ -1,0 +1,4 @@
+2024 06 09	21:52:16	f8ec9e37-dacc-4bef-b4f7-3a495cc3b3f3	TypeError: res.join is not a function
+2024 06 09	21:52:45	44723b80-35e9-4f0d-9246-32794b8e0805	TypeError: res.join is not a function
+2024 06 26	23:15:29	8eda6e21-6175-4ffc-81cf-45d31573ee20	TypeError: res.status(...).if is not a function
+2024 06 26	23:15:29	0e83a7c8-fdbd-4e9c-9745-6abf84614180	TypeError: res.status(...).if is not a function

@@ -1,0 +1,32 @@
+#Express
+-minimal and flexible Node.js application framework
+-It has robust set of features for building web and mobile applications.
+-It is designed to create web servers and APIs quickly and easily with a focus on simplicity and performance
+
+Key Features of Express
+1.Routing: It provides simple and expressive way to define routes for handling different HTTP request GET, POST, PUT, DELETEetc
+Routes are defined using methods like app.get(),
+app.post(), app.put(), app.delete() etc
+2.Middleware: are the function that has access to the req and res object. They can execute the code, modify request and response object, end the request-response cycle or call the nest Middleware in the stack.
+Middleware functons can be added to the request handling pipeline using app.use().
+3.Static files: express provides a built-in Middleware function express.static() to serve static files such as CSS, javascript from directory
+4.Error Handling: Express has built-in error handling middleware functions (app.use((err, req, res, next) => { ... })) to handle errors that occur during request processing.
+
+Regular Expression
+(//statement)? - statement is optional
+^statement - should start with statement
+statement$ - should end with statement
+
+res.redirect(url)
+used to redirect clients to different url
+it sends an http response with 302 status code by default
+301 - moved permanently
+
+#How inbuilt middleware works
+1.when you add app.use(express.json()); to your express application, you are registering the json parsing middleware.
+2.The middleware will intercept incoming requests with a Content-Type of application/json
+3.Middleware checks the content-type header. If it is application/json it proceeds to parse the json payload
+4.the middleware reads the json data from the request body and parses it into a javascript object using json.parse() method
+5.It populates the req.body property with the resulting javascript object.
+This allows the route handlers to access the parsed data directly.
+6.Once the data is parsed and req.body is populated the middleware passes control to the next middleware function or route handler in the stack using the next function
